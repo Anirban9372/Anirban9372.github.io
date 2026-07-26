@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirban — Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">anirban</a>
+            <div class="nav-links">
+                <a href="projects.html">projects</a>
+                <a href="cp.html">cp</a>
+                <a href="about.html">about</a>
+                <a href="ideas.html">ideas</a>
+                <a href="contact.html">contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card" data-project="celonis">
+                    <div class="card-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">decarbonizing_travel.ipynb</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Decarbonizing travel</h3>
+                        <p>Process mining and a high-carbon trip classifier on 87K+ travel records, built in Celonis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="nhanes">
+                    <div class="card-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">age_prediction.ipynb</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>NHANES age prediction</h3>
+                        <p>Senior vs adult classification under class imbalance, F1-optimized.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="conversion">
+                    <div class="card-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">conversion_model.ipynb</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Conversion prediction</h3>
+                        <p>Logistic regression classifier on marketing conversion data.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">×</button>
+            <p class="modal-subtitle" id="modal-subtitle"></p>
+            <h3 id="modal-title"></h3>
+            <p id="modal-body"></p>
+            <div class="modal-chart" id="modal-chart"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
