@@ -28,7 +28,8 @@
 
             <div class="project-grid">
 
-                <div class="project-card">
+
+                <div class="project-card" data-project="celonis">
                     <div class="card-bar">
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
@@ -37,12 +38,14 @@
                     </div>
                     <div class="card-body">
                         <h3>Decarbonizing travel</h3>
-                        <p>Process mining and a high-carbon trip classifier on 87K+ travel records. Celonis Summer
-                            Analytics capstone.</p>
+                        <p>Process mining and a high-carbon trip classifier on 87K+ travel records, built in
+                            Celonis.
+                        </p>
                     </div>
                 </div>
 
-                <div class="project-card">
+
+                <div class="project-card" data-project="nhanes">
                     <div class="card-bar">
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
@@ -51,12 +54,13 @@
                     </div>
                     <div class="card-body">
                         <h3>NHANES age prediction</h3>
-                        <p>Senior vs adult classification under class imbalance, F1-optimized. Summer Analytics 2026,
-                            IIT Guwahati.</p>
+                        <p>Senior vs adult classification under class imbalance, F1-optimized.</p>
                     </div>
                 </div>
 
-                <div class="project-card">
+
+
+                <div class="project-card" data-project="conversion">
                     <div class="card-bar">
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
@@ -68,6 +72,7 @@
                         <p>Logistic regression classifier on marketing conversion data.</p>
                     </div>
                 </div>
+
 
             </div>
         </section>
@@ -134,7 +139,7 @@
                 </div>
 
             </div>
-            </div>
+
         </section>
         <section class="contact" id="contact">
             <h2>Contact</h2>
@@ -143,9 +148,19 @@
                 <a href="https://github.com/Anirban9372" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/Anirban-Pal-9b98421b2" target="_blank">LinkedIn</a>
                 <a href="#ideas">Ideas</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
             </div>
         </section>
     </main>
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">×</button>
+            <p class="modal-subtitle" id="modal-subtitle"></p>
+            <h3 id="modal-title"></h3>
+            <p id="modal-body"></p>
+            <div class="modal-chart" id="modal-chart"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
