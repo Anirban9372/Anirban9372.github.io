@@ -38,3 +38,18 @@ projectCards.forEach(function (card) {
         card.classList.toggle('expanded');
     });
 });
+
+// Scroll-reveal for sections
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+revealEls.forEach(function (el) {
+    observer.observe(el);
+});
