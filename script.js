@@ -53,3 +53,4 @@ const observer = new IntersectionObserver(function (entries) {
 revealEls.forEach(function (el) {
     observer.observe(el);
 });
+
