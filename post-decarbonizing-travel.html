@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirban — Decarbonizing Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">anirban</a>
+            <div class="nav-links">
+                <a href="projects.html">projects</a>
+                <a href="index.html#cp">cp</a>
+                <a href="ideas.html">ideas</a>
+                <a href="blog.html">blog</a>
+                <a href="index.html#about">about</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <a href="blog.html" class="back-link">← writing</a>
+        <article class="post">
+            <p class="card-date">2026 · Celonis Summer Analytics</p>
+            <h1>Cutting 178,090 Tonnes of CO₂e: My Celonis Sustainability Capstone</h1>
+
+            <div class="highlight-grid post-stats">
+                <div class="highlight">
+                    <div class="highlight-num">178,090 t</div>
+                    <div class="highlight-label">Total CO₂e</div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-num">65,289</div>
+                    <div class="highlight-label">Trips analyzed</div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-num">2,728 kg</div>
+                    <div class="highlight-label">Avg per trip</div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-num">25%</div>
+                    <div class="highlight-label">High-carbon trips</div>
+                </div>
+            </div>
+
+            <p>For Celonis Summer Analytics 2026, I got a dataset most people never see: 65,289 real corporate business
+                trips, logged event-by-event, tied to a company's actual Net Zero by 2030 target. The brief was simple
+                to state and hard to do well — find where the emissions actually come from, and turn that into
+                recommendations someone could act on this quarter, not someday.</p>
+
+            <h2>What the process data actually showed</h2>
+            <p>Process mining on the trip event log surfaced three things that weren't obvious from the summary numbers
+                alone:</p>
+            <ul class="insight-list">
+                <li>Premium cabins are only 24.5% of all trips but drive 44.7% of total emissions — by far the single
+                    largest lever in the whole dataset.</li>
+                <li>APAC-origin trips average 3,824 kg CO₂e per trip versus 630 kg for EMEA — a 6× gap, driven
+                    structurally by long-haul dependency, not by any one department's behavior.</li>
+                <li>Out-of-policy trips ran 43% hotter than compliant ones (3,625 kg vs 2,525 kg average) — policy
+                    exceptions weren't just a compliance issue, they were a real carbon cost.</li>
+            </ul>
+
+            <h2>Building the dashboard</h2>
+            <p>I built this out as a 4-tab Celonis dashboard — Emissions Overview, Benchmarking, Emissions Drilldown,
+                and a Process Explorer — with 12+ components covering all five key business questions the brief
+                required. The hardest part wasn't the charts; it was deciding which comparison actually answered "so
+                what do we do about it," rather than just describing the data.</p>
+
+            <h2>Three recommendations, each quantified</h2>
+            <div class="flow post-flow">
+                <div class="flow-node">R1: Restrict Business Class on long-haul routes<br><span
+                        class="flow-impact">~12,635 t CO₂e/yr · ~$632K/yr</span></div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-node">R2: Tighten out-of-policy exception approvals<br><span class="flow-impact">~3,960
+                        t CO₂e/yr · ~$198K/yr</span></div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-node">R3: Mandate train on Berlin–Madrid<br><span class="flow-impact">~770 t CO₂e/yr ·
+                        ~$38.5K/yr</span></div>
+            </div>
+            <p>Combined across a 3-year projection: roughly 79,800 tonnes of CO₂e avoided, around $3.9M in avoided
+                carbon cost, and a 14.5% cut to the annual footprint — without touching a single low-emission trip.</p>
+
+            <h2>What I actually learned</h2>
+            <p>The biggest lesson wasn't technical — it was that "the problem is geography, not department." Every
+                business unit clustered within a narrow 2,600–2,860 kg/trip range; no single team was the outlier. It
+                would have been easy to build a dashboard that pointed fingers at whoever traveled most. The real
+                insight only showed up once I stopped slicing by department and started slicing by route and cabin class
+                instead. That reframing — asking a better question of the same data — mattered more than any chart I
+                built.</p>
+        </article>
+    </main>
+
+    <footer>
+        <a href="mailto:rkmv9372@gmail.com">Email</a>
+        <a href="https://github.com/Anirban9372" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/Anirban-Pal-9b98421b2" target="_blank">LinkedIn</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
